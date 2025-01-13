@@ -1,0 +1,37 @@
+.input-container {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff; /* Asegura que el fondo del input sea blanco */
+    box-sizing: border-box;
+}
+
+.input-container label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 10px 0;
+    color: #aaa;
+    cursor: text;
+    transition: all 0.2s ease-out;
+}
+
+.input-container input:focus ~ label,
+.input-container input:not(:placeholder-shown) ~ label {
+    top: -24px; /* Mueve la etiqueta 4px más arriba */
+    left: 0;
+    font-size: 0.75em;
+    color: #333;
+}
+
+.input-container input:focus,
+.input-container input:not(:placeholder-shown) {
+    outline: none;
+    border-color: #333;
+}

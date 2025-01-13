@@ -1,0 +1,41 @@
+POST http://localhost:8000/api/hotels
+
+HTTP/1.1 404 Not Found
+Host: localhost:8000
+Connection: close
+X-Powered-By: PHP/8.3.15
+Cache-Control: no-cache, private
+date: Fri, 10 Jan 2025 23:29:28 GMT
+Content-Type: text/html; charset=UTF-8
+Access-Control-Allow-Origin: *
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Not Found</title>
+
+</head>
+<body class="antialiased">
+<div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+    <div class="max-w-xl mx-auto sm:px-6 lg:px-8">
+        <div class="flex items-center pt-8 sm:justify-start sm:pt-0">
+            <div class="px-4 text-lg text-gray-500 border-r border-gray-400 tracking-wider">
+                404
+            </div>
+
+            <div class="ml-4 text-lg text-gray-500 uppercase tracking-wider">
+                Not Found
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+Response file saved.
+> 2025-01-10T182928.404.html
+
+Response code: 404 (Not Found); Time: 1360ms (1 s 360 ms); Content length: 6604 bytes (6,6 kB)

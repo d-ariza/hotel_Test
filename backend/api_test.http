@@ -1,0 +1,36 @@
+### Crear un nuevo hotel
+POST http://localhost:8000/api/hotels
+Content-Type: application/json
+
+{
+    "nombre": "Hotel Test",
+    "direccion": "123 Calle Principal",
+    "ciudad": "Bogotá",
+    "nit": "123456789",
+    "numero_habitaciones": 100
+}
+
+
+### Obtener todos los hoteles
+GET http://localhost:8000/api/hotels
+Accept: application/json
+
+### Obtener un hotel por ID
+GET http://localhost:8000/api/hotels/1
+Accept: application/json
+
+### Actualizar un hotel por ID
+PUT http://localhost:8000/api/hotels/1
+Content-Type: application/json
+
+{
+    "nombre": "Hotel Actualizado",
+    "direccion": "123 Calle Principal",
+    "ciudad": "Bogotá",
+    "nit": "123456789",
+    "numero_habitaciones": 150
+}
+
+### Eliminar un hotel por ID
+DELETE http://localhost:8000/api/hotels/1
+Accept: application/json
